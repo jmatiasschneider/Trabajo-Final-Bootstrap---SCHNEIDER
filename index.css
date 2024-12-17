@@ -1,0 +1,11 @@
+.dropdown-item:active {
+    background-color: #212529 !important;
+}
+
+.headingTitle{
+    height: 50vh;
+}
+
+#carouselInstallation{
+    height: 300px;
+}

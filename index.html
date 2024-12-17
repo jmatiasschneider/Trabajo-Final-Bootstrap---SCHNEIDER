@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./index.css" />
+    <title>VRC Formula Alpha</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">VRC</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBarLinks" aria-controls="navBarLinks" aria-expanded="false" aria-label="Navigation Menu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navBarLinks">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navBarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Installation
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navBarDropdown">
+                  <li><a class="dropdown-item" href="#step1" onclick="mostrarSlide(0)">First Step</a></li>
+                  <li><a class="dropdown-item" href="#step2" onclick="mostrarSlide(1)">Step 2</a></li>
+                  <li><a class="dropdown-item" href="#step3" onclick="mostrarSlide(2)">Step 3</a></li>
+                  <li><a class="dropdown-item" href="#step4" onclick="mostrarSlide(3)">Step 4</a></li>
+                  <li><a class="dropdown-item" href="#step5" onclick="mostrarSlide(4)">Final Step</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#video">Video</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <main>
+        <div class="bg-dark bg-gradient container-fluid text-center headingTitle text-light d-flex flex-column justify-content-center">
+            <div class="row p-4">
+                <h1 class="col">VRC Formula Alpha</h1>
+            </div>  
+            <div class="row p-4">
+                <p class="col">VRC proudly presents the Formula Alpha 2024, an evolution of our acclaimed Formula Alpha 2023 project. With approximately 1000hp, including 160hp from a refined electric powertrain, and a car weight of 722kg, this machine dominates the track with superior downforce and handling.</p>
+            </div>  
+        </div>
+
+
+        <article class="bg-dark bg-gradient bg-opacity-75" id="gallery">
+            <h2 class="text-center text-light p-4">Gallery</h2>
+            <section class="container-fluid p-4 align-items-center">
+                <div class="row">
+                    <img src="./assets/fa24preview.png" class="img-fluid p-2" alt="fisrt gallery photo">
+                </div>
+                <div class="row">
+                    <img src="./assets/1vrc_formula_alpha_2024_csp-ks_barcelona-20240725-185112.jpg" class="img-fluid col-4" alt="gallery photo 2">
+                    <img src="./assets/screenshot_vrc_formula_alpha_2024_csp_vrc_mexico_26-6-124-22-28-22.jpg" class="img-fluid col-4" alt="gallery photo 3">
+                    <img src="./assets/screenshot_vrc_formula_alpha_2024_spa_27-6-124-15-38-16.jpg" class="img-fluid col-4" alt="last gallery photo">
+                </div>
+            </section>
+        </article>
+
+        <article class="bg-dark bg-gradient bg-opacity-50" id="installation">
+            <h2 class="text-center text-dark p-4">Installation</h2>
+            <section>
+                <div id="carouselInstallation" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselInstallation" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First Step"></button>
+                      <button type="button" data-bs-target="#carouselInstallation" data-bs-slide-to="1" aria-label="Step 2"></button>
+                      <button type="button" data-bs-target="#carouselInstallation" data-bs-slide-to="2" aria-label="Step 3"></button>
+                      <button type="button" data-bs-target="#carouselInstallation" data-bs-slide-to="3" aria-label="Step 4"></button>
+                      <button type="button" data-bs-target="#carouselInstallation" data-bs-slide-to="4" aria-label="Final Step"></button>
+                    </div>
+                    <div class="carousel-inner text-center text-dark">
+                        <div class="carousel-item active" id="step1">
+                            <h4>Extract the Mod</h4>
+                            <div class="p-5">
+                                <p>Find the downloaded mod file in your computer downloads folder.</p>
+                                <p>Right-click on the file and choose “Extract” or “Extract Here”. This will create a new folder with the mod’s contents.</p>
+                            </div>  
+                        </div>
+                      <div class="carousel-item" id="step2">
+                        <h4>Locate the Assetto Corsa Directory</h4>
+                        <div class="p-5">
+                        <p>Open File Explorer.</p>
+                        <p>Navigate to the Assetto Corsa installation directory, usually found at:</p>
+                        <p>C:\Program Files (x86)\Steam\steamapps\common\assettocorsa</p>
+                    </div> 
+                    </div>
+                      <div class="carousel-item" id="step3">
+                        <h4>Copy the Mod Files</h4>
+                        <div class="p-5">
+                        <p>Open the folder you extracted in fisrt step.</p>
+                        <p>Select all the mod folders (often contained in a folder called AC Files) including the apps and content folders.</p>
+                        <p>Right-click and choose Copy</p>
+                    </div> 
+                    </div>
+                      <div class="carousel-item" id="step4">
+                        <h4>Paste the Mod Files</h4>
+                        <div class="p-5">
+                        <p>Return to the Assetto Corsa directory you located in Step 2.</p>
+                        <p>Right-click and choose Paste to paste the copied mod files into this folder.</p>
+                    </div> 
+                    </div>
+                      <div class="carousel-item" id="step5">
+                        <h4>Enjoy the Mod</h4>
+                        <div class="p-5">
+                        <p>Customize your car setup, choose a track, and start racing with the newly installed mod!</p>
+                        </div>  
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselInstallation" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselInstallation" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+        </article>
+
+        <article class="bg-dark bg-gradient bg-opacity-25" id="video">
+            <h2 class="text-center text-dark p-4">Video</h2>
+            <section class="container-fluid">
+                <div class="row">
+                        <video src="./assets/AC - Gálvez ( Autódromo Bueno Aires) Record 1_12.565 - VRC Formula Alpha 2023.mp4" class="col object-fit-scale p-3" controls></video>
+                </div>
+            </section>
+        </article>
+    </main>
+    <div class="container">
+        <footer class="row d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <a href="/" class="col-1 d-flex align-items-center justify-content-center mb-3 link-body-emphasis text-decoration-none">
+                <i class="bi bi-house"></i>   
+            </a>     
+            <ul class="nav col-11 justify-content-end">
+            <li class="nav-item"><a href="https://www.virtual-racing-cars.com/p/ac-formula-alpha-2024/" target="_blank" class="nav-link px-2 text-body-secondary">© VRC Virtual Racing Cars LLC - 2022 ALL RIGHTS RESERVED.</a></li>
+            <li class="nav-item"><a href="https://www.linkedin.com/in/jorge-mat%C3%ADas-e-schneider-83590a44/" target="_blank" class="nav-link px-2 text-body-secondary">Designed by Matías Schneider</a></li>
+          </ul>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>   
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
